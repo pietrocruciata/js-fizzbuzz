@@ -11,13 +11,11 @@ for (let i = 0; i < 100; i++) {
     let numMultiplo5 = parseInt(num % 5); //number
 
 
-    if (numMultiplo3 && numMultiplo5 !== 0) {
 
-        console.log(num)
 
-        // SELEZIONARE I NUMERI DIVISIBILI SIA PER 3 CHE PER 5
-        // STAMPARE "FIZZBUZZ" PER I NUMERI DIVISIBILI SIA PER 3 CHE PER 5
-    } else if (numMultiplo3 === 0 && numMultiplo5 === 0) {
+    // SELEZIONARE I NUMERI DIVISIBILI SIA PER 3 CHE PER 5
+    // STAMPARE "FIZZBUZZ" PER I NUMERI DIVISIBILI SIA PER 3 CHE PER 5
+    if (numMultiplo3 === 0 && numMultiplo5 === 0) {
         console.log('fizzbuzz')
 
         // STAMPARE "FIZZ" PER I NUMERI MULTIPLI DI 3
@@ -27,5 +25,7 @@ for (let i = 0; i < 100; i++) {
         // STAMPARE "BUZZ" PER I NUMERI MULTIPLI DI 5
     } else if (numMultiplo5 === 0) {
         console.log('buzz')
+    } else {
+        console.log(num)
     }
 }
