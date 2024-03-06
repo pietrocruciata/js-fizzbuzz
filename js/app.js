@@ -1,21 +1,43 @@
 // STAMPARE IN CONSOLE I NUMERI DA 1 A 100
 for (let i = 0; i < 100; i++) {
     let num = i + 1
-    console.log(num)
-     
+
+
 
     // SELEZIONARE I MULTIPLI DI 3
-    let numM3 = num % 3
+    let numMultiplo3 = parseInt(num % 3); //number
+
+    // SELEZIONARE I MULTIPLI DI 5
+    let numMultiplo5 = parseInt(num % 5); //number
 
     // STAMPARE "FIZZ" PER I NUMERI MULTIPLI DI 3
-    if (numM3 === 0) {
-        let numM3 = 'fizz'
-        console.log(numM3)
-        
+    if (numMultiplo3 && numMultiplo5 !== 0) {
+        console.log(num)
+    } else if (numMultiplo3 === 0) {
+        console.log('fizz')
+
+        // STAMPARE "BUZZ" PER I NUMERI MULTIPLI DI 5
+    } else if (numMultiplo5 === 0) {
+        console.log('buzz')
+
+        // SELEZIONARE I NUMERI DIVISIBILI SIA PER 3 CHE PER 5
+        // STAMPARE "FIZZBUZZ" PER I NUMERI DIVISIBILI SIA PER 3 CHE PER 5
+    } else if (numMultiplo3 === 0 && numMultiplo5 === 0) {
+        console.log('fizzbuzz')
     }
+
+
+
+
+
+
+
+
+
+
+
 }
 
-// SELEZIONARE I MULTIPLI DI 5
-// STAMPARE "BUZZ" PER IL MULTIPLI DI 5
-// SELEZIONARE I NUMERI DIVISIBILI SIA PER 3 CHE PER 5
-// STAMPARE "FIZZBUZZ" PER I NUMERI DIVISIBILI SIA PER 3 CHE PER 5
+
+
+
